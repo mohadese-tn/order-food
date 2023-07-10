@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="./images/pizza-svgrepo-com.svg">
+    <title>Order food</title>
+</head>
+<body>
+    <!-- Preload -->
+    <div class="preloader">
+        <img src="./images/preloadergif.gif" alt="preload">
+    </div>
+
+    <div class="wrapper">
+        <!-- Section 1 -->
+        <section class="header">
+            <h1 class="header-txt">Online <span>food ordering </span> from <br> the best restaurants and fastfoods</h1>
+            <a href="#products" class="note">Let's Start :)</a>
+            <a href="#products" class="animate-arrow fa fa-angle-down"></a>
+            <div class="images">
+            <img src="./images/cake-svgrepo-com.svg" >
+            <img src="./images/egg-svgrepo-com.svg" >
+            <img src="./images/fries-svgrepo-com.svg" >
+            <img src="./images/hamburger-svgrepo-com.svg" >
+            <img src="./images/hand-pulled-noodle-svgrepo-com.svg" >
+            <img src="./images/juice-svgrepo-com.svg" >
+            <img src="./images/pizza-svgrepo-com.svg" >
+            </div>
+        </section>
+
+        <!-- section 2 (horizontal scrolling)-->
+        <section class="products" id="products">
+            <h2 class="product-header">Our Menu</h2>
+            <div class="container">
+                <div class="box-scroll">
+                    <div class="card ">
+                        <img src="./images/burgur.jpg">
+                        <p>Delicious Burgur</p>
+                        <a class="pop" href="#">order now:) </a>
+                    </div>
+                    <div class="card ">
+                        <img src="./images/pizza.jpg">
+                        <p>yummi Pizza</p>
+                        <a class="pop" href="#">order now:)</a>
+                    </div>
+                    <div class="card ">
+                        <img src="./images/breakfast.jpg">
+                        <p>hearty Breakfast </p>
+                        <a class="pop" href="#">order now:)</a>
+                    </div>
+                    <div class="card ">
+                        <img src="./images/pasta (2).jpg">
+                        <p>Tasty Spaghetti</p>
+                        <a class="pop" href="#">order now:)</a>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="footer-list">
+                <h3 class="footer-list-title">SUPPORT </h3>
+                <ul class=" footer-service"> 
+                    <li class="footer-list-item"><a href="#"> Help Center </a></li>
+                    <li class="footer-list-item"><a href="#">Submit a Ticket</a></li>
+                    <li class="footer-list-item"><a href="#"> Contact Us </a></li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <h3 class="footer-list-title">SUPPORT </h3>
+                <ul class=" footer-service"> 
+                    <li class="footer-list-item"><a href="#"> Help Center </a></li>
+                    <li class="footer-list-item"><a href="#">Submit a Ticket</a></li>
+                    <li class="footer-list-item"><a href="#"> Contact Us </a></li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <h3 class="footer-list-title">SUPPORT </h3>
+                <ul class=" footer-service"> 
+                    <li class="footer-list-item"><a href="#"> Help Center </a></li>
+                    <li class="footer-list-item"><a href="#">Submit a Ticket</a></li>
+                    <li class="footer-list-item"><a href="#"> Contact Us </a></li>
+                </ul>
+            </div>
+
+        </footer>
+    </div>
+
+    <div id="backdrop"></div>
+    <div id="login-form">
+        <form>
+            <h2>Order</h2>
+            <label for="username">Your name: </label><br>
+            <input type="text" placeholder="Enter your name" class="login-form__username" required><br>
+            
+            <label for="products">choose product:</label>
+            <select name="product" class="login-form__selectbox">
+                <option class="login-form__option" value="-1">...</option>
+                <option class="login-form__option" value="burgur">burgur</option>
+                <option class="login-form__option" value="pizza">pizza</option>
+                <option class="login-form__option" value="breakfast">breakfast</option>
+                <option class="login-form__option" value="pasta">pasta</option>
+            </select>
+            
+            
+            <label class="login-form__checkbox">Delivery
+                <input  type="radio" name="order" checked="">
+                <span class="checkmark"></span>
+
+            </label>
+            
+            <label class="login-form__checkbox">pick Up
+                <input  type="radio" name="order" checked="">
+                <span class="checkmark"></span>
+
+            </label>
+            <br>
+            <button class="login-form__btn" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <button  id="myBtn"><i class="fas fa-arrow-up"></i></button>
+
+
+    <script src="./scipts/app.js"></script>  
+</body>
+</html>
